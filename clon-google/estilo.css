@@ -1,0 +1,56 @@
+/* Estilos para todos los elementos */
+* {
+  box-sizing: border-box; /* Para un manejo más consistente de anchos y márgenes */
+  margin: 0;            /* Elimina los márgenes predeterminados */
+  padding: 0;           /* Elimina los rellenos predeterminados */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* alinea verticalmente */
+    align-items: center;       /* alinea horizontalmente */
+    min-height: 50vh;         /* ocupa toda la pantalla */
+}
+
+.title section {
+    text-align: center;
+}
+
+.title img {
+    width: 272px;  /* tamaño parecido al logo de Google */
+    margin-bottom: 20px;
+    
+}
+
+.title input[type="text"] {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 24px;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    display: flex;
+}
+
+.title button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: none;
+    background: #f8f9fa;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.title button:hover {
+    background: #f1f1f1;
+}
