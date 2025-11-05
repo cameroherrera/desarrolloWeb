@@ -76,3 +76,37 @@ header {
   .cta-header{display:inline-block;}
 }
 
+/* ================== [SECCION 2: HERO / JUMBOTRON] ================== */
+.hero {
+  background: radial-gradient(circle at 20% 20%, rgba(56,189,248,.2) 0%, rgba(14,165,233,0) 60%), var(--bg-dark);
+  color: #fff;
+  padding: 3rem 0 4rem;
+}
+
+.hero-inner {
+  display: grid;
+  gap: 2rem;
+}
+
+.hero-copy h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.signup-card {
+  background-color: #fff;
+  color: var(--text-main);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.signup-btn {
+  background-color: var(--accent);
+  color: #0f172a;
+  border: 0;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
