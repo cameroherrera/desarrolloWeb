@@ -140,3 +140,22 @@ header {
   padding: .75rem;
   font-weight: 600;
 }
+
+/* ================== [SECCION 4: CATALOGO / CURSOS] ================== */
+#catalogo {
+  padding: 3rem 0;
+  background-color: var(--bg-light);
+}
+
+.catalog-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.product-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-soft);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: var(--shadow-card);
+}
