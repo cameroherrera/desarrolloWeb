@@ -1,3 +1,72 @@
+
+:root {
+  --bg-dark: #0f172a;
+  --bg-light: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --accent: #38bdf8;
+  --accent-dark: #0ea5e9;
+  --card-bg: #ffffff;
+  --radius-lg: 1rem;
+  --radius-md: .5rem;
+  --radius-full: 999px;
+  --border-soft: rgba(15,23,42,.08);
+  --shadow-card: 0 24px 48px -12px rgba(0,0,0,.2);
+  --shadow-hover: 0 32px 64px -16px rgba(0,0,0,.35);
+  --container-max: 1280px;
+}
+
+*{
+  box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+}
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color:var(--text-main);
+  background-color:var(--bg-light);
+  line-height:1.5;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color:var(--text-main);
+  line-height:1.2;
+  margin-top:0;
+  font-weight:600;
+}
+
+p{
+  margin-top:.5rem;
+  margin-bottom:1rem;
+  color:var(--text-muted);
+  font-size:1rem;
+}
+
+a{
+  color:var(--accent-dark);
+  text-decoration:none;
+}
+
+/* --- Layout helpers --- */
+.container{
+  width:100%;
+  max-width:var(--container-max);
+  margin-inline:auto;
+  padding-inline:1rem;
+}
+
+@media(min-width:768px){
+  .container{
+    padding-inline:2rem;
+  }
+}
+
 /* ================== [ HEADER / NAVEGACION] ================== */
 header {
   position: sticky;
