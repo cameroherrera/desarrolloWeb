@@ -1,53 +1,134 @@
-<!DOCTYPE HTML>
-
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Pagina Web Prueba</title>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academia Global · Idiomas Online</title>
 
+  <!-- importa estilos externos -->
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
 <body>
 
-	<header>
-		<nav>
-			<ul>
-				<li>Your menu</li>
-			</ul>
-		</nav>
-	</header>
-	
-	<section>
-	
-		<article>
-			<header>
-				<h2>Article title</h2>
-				<p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-			</header>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-		</article>
-		
-		<article>
-			<header>
+<main>
 
-				<h2>Article title</h2>
-				<p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-			</header>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-		</article>
-		
-	</section>
+<!-- ================== [SECCION 1: HEADER / NAVEGACION] ================== -->
+<header>
+  <div class="container">
+    <div class="nav-bar">
+      <div class="brand">
+        <div class="brand-logo"></div>
+        <span>Academia Global</span>
+      </div>
 
-	<aside>
-		<h2>About section</h2>
-		<p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-	</aside>
+      <nav class="nav-links">
+        <a href="#catalogo">Cursos</a>
+        <a href="#registro">Registro</a>
+        <a href="#beneficios">Por qué nosotros</a>
+        <a href="#footer">Contacto</a>
+        <button class="cta-header">Comienza hoy</button>
+      </nav>
 
-	<footer>
-		<p>Copyright 2009 Your name</p>
-	</footer>
+      <button class="burger" id="burgerBtn">☰</button>
+    </div>
 
-</body>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#catalogo">Cursos</a>
+      <a href="#registro">Registro</a>
+      <a href="#beneficios">Por qué nosotros</a>
+      <a class="mobile-cta" href="#hero-form">Comienza hoy</a>
+    </div>
+  </div>
+</header>
 
-</html>
+<!-- ================== [SECCION 2: HERO / JUMBOTRON] ================== -->
+<section class="hero" id="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <div class="hero-badge">Aprende inglés desde $49 MXN</div>
+      <h1>Cursos de idiomas 100% online.<br>Mejora tu perfil profesional hoy.</h1>
+      <p>Acceso inmediato a cursos de inglés, francés e italiano.</p>
+      <div class="signup-card" id="hero-form">
+        <h2>Recibe acceso y precios especiales</h2>
+        <form class="signup-form">
+          <label>Correo electrónico</label>
+          <input type="email" placeholder="tu@email.com" required>
+          <button class="signup-btn">Quiero la oferta</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card-inner">
+        <h3>Inglés Profesional Express</h3>
+        <p>Frases laborales y vocabulario práctico.</p>
+      </div>
+      <div class="hero-bubble"><span>+1,200</span> estudiantes activos</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== [SECCION 3: REGISTRO DE USUARIO] ================== -->
+<section id="registro">
+  <div class="container">
+    <div class="registro-inner">
+      <h2>Registro de usuario</h2>
+      <form class="registro-form">
+        <label>Nombre completo</label>
+        <input type="text" placeholder="Tu nombre" required>
+        <label>Correo electrónico</label>
+        <input type="email" placeholder="correo@ejemplo.com" required>
+        <label>Contraseña</label>
+        <input type="password" placeholder="Mínimo 8 caracteres" required>
+        <button type="submit" class="registro-submit">Registrarme</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================== [SECCION 4: CATALOGO / CURSOS] ================== -->
+<section id="catalogo">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Catálogo</div>
+      <h2>Nuestros cursos más solicitados</h2>
+    </div>
+    <div class="catalog-grid">
+      <article class="product-card">
+        <div class="product-thumb">Inglés desde cero A1→B1</div>
+        <h3>Inglés básico</h3>
+        <p>Vocabulario esencial y pronunciación.</p>
+      </article>
+      <article class="product-card">
+        <div class="product-thumb">Inglés profesional</div>
+        <h3>Entrevistas laborales</h3>
+        <p>Cómo responder con seguridad y claridad.</p>
+      </article>
+    </div>
+  </div>
+</section>
+</main>  
+<!-- ================== [SECCION 5: BENEFICIOS + FOOTER] ================== -->
+<section id="beneficios">
+  <div class="container benefits-wrap">
+    <div class="benefits-copy">
+      <h2>¿Por qué elegirnos?</h2>
+      <p>Aprende desde tu teléfono y sin mensualidades largas.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <h4>Academia Global</h4>
+      <ul>
+        <li>Cursos 100% online</li>
+        <li>Atención por WhatsApp</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-note">
+    © 2025 Academia Global. Todos los derechos reservados.
+  </div>
+</footer>
