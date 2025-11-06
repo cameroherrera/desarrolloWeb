@@ -159,3 +159,23 @@ header {
   padding: 1rem;
   box-shadow: var(--shadow-card);
 }
+
+/* ================== [SECCION 5: BENEFICIOS Y FOOTER] ================== */
+#beneficios {
+  background-color: var(--bg-dark);
+  color: #fff;
+  padding: 3rem 0;
+}
+
+footer {
+  background-color: #0b1121;
+  color: #fff;
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.footer-note {
+  text-align: center;
+  font-size: .8rem;
+  color: rgba(255,255,255,.5);
+}
